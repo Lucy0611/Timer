@@ -46,14 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form_Alam_Child.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form_Alam_Child.Designer.cs">
+      <DependentUpon>Form_Alam_Child.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Time_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Time_Main.Designer.cs">
+      <DependentUpon>Form_Time_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Alam_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Alam_Main.Designer.cs">
+      <DependentUpon>Form_Alam_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Alam_Child.resx">
+      <DependentUpon>Form_Alam_Child.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Time_Main.resx">
+      <DependentUpon>Form_Time_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Alam_Main.resx">
+      <DependentUpon>Form_Alam_Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +97,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun-plus-4443316.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
